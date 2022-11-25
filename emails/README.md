@@ -12,6 +12,6 @@ Rename the `.env.example` to `.env` and add your environment variable values.
 
 ```
 $ git clone git@github.com:jakequinter/tools.git
-$ cd emails
+$ cd tools/emails
 $ python mail.py
 ```
