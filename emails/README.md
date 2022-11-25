@@ -1,6 +1,6 @@
 # Email spammer
 
-Do you ever find yourself unsubscribing from the same email mailing list weekly? Company X doesn't seem to honor their email preferences? Well, here you go.
+Do you ever find yourself unsubscribing from the same mailing list weekly? Company X doesn't seem to honor their email preferences? Well, here you go.
 
 > ⚠️ Please use with caution.
 
