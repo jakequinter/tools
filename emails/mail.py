@@ -15,7 +15,7 @@ def get_email_info():
     recipient_email = input("To: ")
     subject = input("Subject: ")
     body = input("Body: ")
-    message_to_send = f"Subject: {subject}\n{body}"
+    message_to_send = f"Subject: {subject}\n\n{body}"
 
     return recipient_email, message_to_send
 
