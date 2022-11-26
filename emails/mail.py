@@ -24,11 +24,12 @@ def send_emails():
     recipient_email, message_to_send = get_email_info()
     count = 0
 
+    smtp = smtplib.SMTP("smtp.gmail.com", HOST)
+    smtp.ehlo()
+    smtp.starttls()
+    smtp.login(EMAIL, PASSWORD)
+
     while count < EMAILS_TO_SEND:
-        smtp = smtplib.SMTP("smtp.gmail.com", HOST)
-        smtp.ehlo()
-        smtp.starttls()
-        smtp.login(EMAIL, PASSWORD)
         res = smtp.sendmail(EMAIL, recipient_email, message_to_send)
 
         if not res:
