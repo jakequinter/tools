@@ -1,10 +1,14 @@
-# Web scraper
+# Bitcoin price
 
-A simple web scraper that fetches the current price of Bitcoin from [CoinMarketCap](https://coinmarketcap.com/).
+Grab the the current price of Bitcoin by scraping [CoinMarketCap](https://coinmarketcap.com/) or by hitting the [Strike API](https://strike.me/developer/).
 
 ![A GIF showing the bitcoin command running in a terminal](https://user-images.githubusercontent.com/39658269/204101479-0ec2250f-e2c4-4b76-b7ec-3aa4085d6362.gif)
 
-> ⚠️ The css class that's used to grab this information may suddenly change. Update the script accordingly.
+> ⚠️ The css class that's used to grab the CoinMarketCap data may suddenly change. Update the script accordingly.
+
+### Setup
+
+Rename the `.env.example` to `.env` and add your Strike API key.
 
 ### Installing dependencies
 
@@ -12,6 +16,7 @@ A simple web scraper that fetches the current price of Bitcoin from [CoinMarketC
 $ pip install requests
 $ pip install bs4
 $ pip install lxml
+$ pip install python-dotenv
 ```
 
 ### Running locally
@@ -19,7 +24,7 @@ $ pip install lxml
 ```
 $ git clone git@github.com:jakequinter/tools.git
 $ cd tools/web
-$ python scraper.py
+$ python main.py
 ```
 
 ### Configuring terminal command
@@ -28,6 +33,6 @@ I created a command so I can just run `bitcoin` in my terminal and it will run t
 
 ```
 bitcoin() {
-    python path/to/directory/scraper.py “$1”
+    python path/to/directory/main.py “$1”
 }
 ```
