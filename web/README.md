@@ -2,7 +2,7 @@
 
 Grab the the current price of Bitcoin by scraping [CoinMarketCap](https://coinmarketcap.com/) or by hitting the [Strike API](https://strike.me/developer/).
 
-![A GIF showing the bitcoin command running in a terminal](https://user-images.githubusercontent.com/39658269/204101479-0ec2250f-e2c4-4b76-b7ec-3aa4085d6362.gif)
+![A GIF showing the bitcoin command running in a terminal](https://user-images.githubusercontent.com/39658269/205134281-9b7476aa-a856-4a59-8c06-9d82bdf908d0.gif)
 
 > ⚠️ The css class that's used to grab the CoinMarketCap data may suddenly change. Update the script accordingly.
 
