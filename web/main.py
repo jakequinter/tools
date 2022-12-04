@@ -9,11 +9,10 @@ STRIKE_API_KEY = os.getenv('STRIKE_API_KEY')
 
 
 def get_coinmarkcap_price():
-    result = requests.get(
-        'https://coinmarketcap.com/currencies/bitcoin/markets/')
+    result = requests.get('https://coinmarketcap.com/currencies/bitcoin/')
     soup = bs4.BeautifulSoup(result.text, "lxml")
     bitcoin_price = soup.select(".priceValue > span")
-
+    
     print(f'Current Bitcoin price: {bitcoin_price[0].text}')
 
 
